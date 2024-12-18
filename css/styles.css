@@ -14,6 +14,11 @@
   --slate900: hsl(202, 55%, 16%);
 }
 
+body {
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 16px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
