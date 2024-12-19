@@ -15,10 +15,10 @@
 }
 
 body {
-    font-family: "Plus Jakarta Sans", serif;
-    font-size: 16px;
-    box-sizing: border-box;
-    margin: 0;
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 main {
@@ -52,10 +52,45 @@ header {
 .mortgageData {
   background-color: var(--white);
   padding: 1rem;
-
 }
 
-.mortgageResultsEmpty, .mortgageResultsFull {
+.mortgageInput {
+  border: solid 1px var(--slate700);
+  border-radius: 0.2rem;
+  overflow: hidden;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mortgageInput span {
+  background-color: var(--slate100);
+  color: var(--slate500);
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.mortgageInput input {
+  border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.mortgageResultsEmpty,
+.mortgageResultsFull {
   background-color: var(--slate900);
 }
 
@@ -64,7 +99,8 @@ header {
   padding: 2rem 0;
 }
 
-.resultsTitle, .resultsInstructions {
+.resultsTitle,
+.resultsInstructions {
   color: var(--white);
 }
 
