@@ -34,6 +34,10 @@ main {
   flex-direction: column;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
 .mortgageData {
   background-color: var(--white);
 
