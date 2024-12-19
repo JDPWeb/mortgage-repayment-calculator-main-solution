@@ -26,36 +26,41 @@
   <body>
     <main>
       <div class="mCalculator">
-        <header>
-          <h1>Mortgage Calculator</h1>
-          <span class="btn">Clear All</span>
-        </header>
-        <form action="">
-          <label for="">Mortgage Amount</label>
-          <input type="number" />
+        <div class="mortgageData">
+          <header>
+            <h1>Mortgage Calculator</h1>
+            <span class="btn">Clear All</span>
+          </header>
+          <form action="">
+            <label for="">Mortgage Amount</label>
+            <input type="number" />
+  
+            <label for="">Mortgage Term</label>
+            <input type="number" />
+  
+            <label for="">Interest Rate</label>
+            <input type="number" />
+  
+            <fieldset>
+              <legend>Mortgage Type</legend>
+              <div>
+                <input type="radio" name="mortgageType" id="repayment" />
+                <label for="repayment">Repayment</label>              
+              </div>
+              <div>
+                <input type="radio" name="mortgageType" id="interestOnly" />
+                <label for="Interest Only">Interest Only</label>
+              </div>
+            </fieldset>
+            <input type="submit" value="Calculate Repayments" />
+          </form>
+        </div>
 
-          <label for="">Mortgage Term</label>
-          <input type="number" />
+        <div class="mortgageResultsEmpty"></div>
 
-          <label for="">Interest Rate</label>
-          <input type="number" />
-
-          <label for="">Mortgage Type</label>
-          <input 
-            type="radio" 
-            name="Repayment" 
-            id=""
-          />
-          <input
-            type="radio"
-            name="Interest Only"
-            id=""
-          />
-          <input type="submit" value="Calculate Repayments">
-        </form>
+        <div class="mortgageResultsFull"></div>
       </div>
     </main>
-         
 
     <!-- Empty results start -->
 
