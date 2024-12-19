@@ -17,10 +17,25 @@
 body {
     font-family: "Plus Jakarta Sans", serif;
     font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 main {
   min-height: 100vh;
+  width: auto;
+  background-color: var(--slate100);
+  margin: 0;
+}
+
+.mCalculator {
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mortgageResultsFull {
+  display: none;
 }
 
 .attribution {
