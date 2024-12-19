@@ -34,6 +34,29 @@ main {
   flex-direction: column;
 }
 
+.mortgageData {
+  background-color: var(--white);
+
+}
+
+.mortgageResultsEmpty, .mortgageResultsFull {
+  background-color: var(--slate900);
+}
+
+.mortgageResultsEmpty {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.resultsTitle, .resultsInstructions {
+  color: var(--white);
+}
+
+.resultsInstructions {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 .mortgageResultsFull {
   display: none;
 }
