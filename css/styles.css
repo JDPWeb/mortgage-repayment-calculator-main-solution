@@ -36,10 +36,22 @@ main {
 
 h1 {
   font-size: 1.5rem;
+  color: var(--slate900);
+}
+
+.clear {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--slate700);
+}
+
+header {
+  margin-bottom: 1.5rem;
 }
 
 .mortgageData {
   background-color: var(--white);
+  padding: 1rem;
 
 }
 
