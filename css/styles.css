@@ -58,7 +58,7 @@ header {
   border: solid 1px var(--slate700);
   border-radius: 0.2rem;
   overflow: hidden;
-  height: 2rem;
+  height: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -69,11 +69,12 @@ header {
   background-color: var(--slate100);
   color: var(--slate500);
   font-weight: bold;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .mortgageInput input {
   border: none;
+  margin: auto;
 }
 
 /* Chrome, Safari, Edge, Opera */
