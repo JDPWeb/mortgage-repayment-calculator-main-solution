@@ -40,18 +40,24 @@
             </div>
   
             <label class="appLabel" for="">Mortgage Term</label>
-            <input type="number" />
+            <div class="mortgageInput">
+              <input type="number" />
+              <span>years</span>
+            </div>
   
             <label class="appLabel" for="">Interest Rate</label>
-            <input type="number" />
+            <div class="mortgageInput">
+              <input type="number" />
+              <span>&#37;</span>
+            </div>
   
             <fieldset>
               <legend class="appLabel">Mortgage Type</legend>
-              <div>
-                <input type="radio" name="mortgageType" id="repayment" />
+              <div class="mType">
+                <input type="radio" name="mortgageType" id="repayment" checked/>
                 <label for="repayment">Repayment</label>              
               </div>
-              <div>
+              <div class="mType">
                 <input type="radio" name="mortgageType" id="interestOnly" />
                 <label for="Interest Only">Interest Only</label>
               </div>

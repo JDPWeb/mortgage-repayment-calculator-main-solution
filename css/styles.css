@@ -55,25 +55,28 @@ header {
 }
 
 .appLabel {
-  color: var(--slate300);
+  color: var(--slate700);
+  display: block;
+  margin: .75rem 0;
 }
 
 .mortgageInput {
   border: solid 1px var(--slate700);
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   overflow: hidden;
   height: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .mortgageInput span {
   background-color: var(--slate100);
-  color: var(--slate500);
+  color: var(--slate700);
   font-weight: bold;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem .75rem;
 }
 
 .mortgageInput input {
@@ -92,6 +95,30 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.mType {
+  border: solid 1px var(--slate900);
+  border-radius: .3rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  margin-bottom: .5rem;
+}
+
+.mType input {
+  margin-right: .75rem;
+}
+
+.mType label {
+  font-weight: 700;
+  color: var(--slate900);
 }
 
 .mortgageResultsEmpty,
