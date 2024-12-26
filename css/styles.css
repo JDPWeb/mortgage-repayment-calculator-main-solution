@@ -54,6 +54,10 @@ header {
   padding: 1rem;
 }
 
+.appLabel {
+  color: var(--slate300);
+}
+
 .mortgageInput {
   border: solid 1px var(--slate700);
   border-radius: 0.2rem;
