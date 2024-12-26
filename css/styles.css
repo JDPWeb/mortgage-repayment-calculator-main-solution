@@ -52,6 +52,7 @@ header {
 .mortgageData {
   background-color: var(--white);
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .appLabel {
@@ -103,7 +104,7 @@ fieldset {
 }
 
 .mType {
-  border: solid 1px var(--slate900);
+  border: solid 1px var(--slate700);
   border-radius: .3rem;
   height: 2.3rem;
   display: flex;
@@ -113,12 +114,38 @@ fieldset {
 }
 
 .mType input {
-  margin-right: .75rem;
+  margin-right: 1rem;
+  color: var(--lime);
+}
+
+.mType input:checked {
+  color: var(--lime);
 }
 
 .mType label {
   font-weight: 700;
   color: var(--slate900);
+}
+
+.button {
+  border: none;
+  background-color: var(--lime);
+  border-radius: 5rem;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--slate900);
+  display: block;
+  width: 100%;
+  padding: .75rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.button img {
+  margin-right: .5rem;
 }
 
 .mortgageResultsEmpty,
