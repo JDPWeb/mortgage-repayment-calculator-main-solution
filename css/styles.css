@@ -83,6 +83,11 @@ header {
 .mortgageInput input {
   border: none;
   margin: auto;
+  margin-left: 1rem;
+  width: 100%;
+  accent-color: transparent;
+  font-weight: 700;
+  color: var(--slate900);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -106,7 +111,7 @@ fieldset {
 .mType {
   border: solid 1px var(--slate700);
   border-radius: .3rem;
-  height: 2.3rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   padding-left: 1rem;
@@ -115,11 +120,30 @@ fieldset {
 
 .mType input {
   margin-right: 1rem;
-  color: var(--lime);
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  width: .75rem;
+  height: .75rem;
+  border: 2px solid #fff;
+  outline: 1px solid var(--slate900);
 }
 
 .mType input:checked {
-  color: var(--lime);
+  margin-right: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  width: .75rem;
+  height: .75rem;
+  background: var(--lime);
+  border: 2px solid hsl(61, 100%, 88%);
+  outline: 2px solid var(--lime);
+}
+
+.mType:has(input:checked) {
+  background-color: hsla(61, 70%, 52%, .10);
+  border: solid 1px var(--lime);
 }
 
 .mType label {
@@ -141,7 +165,7 @@ fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin: 1rem auto;
 }
 
 .button img {
